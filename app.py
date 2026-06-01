@@ -5,10 +5,7 @@ os.environ["USE_TORCH"] = "1"
 from transformers import pipeline
 import gradio as gr
 
-model = pipeline(
-    "summarization",
-    model="facebook/bart-large-cnn"
-)
+model = pipeline("summarization", model="facebook/bart-large-cnn")
 
 def predict(text):
     return model(text, max_length=120, min_length=30, do_sample=False)[0]["summary_text"]
@@ -19,4 +16,4 @@ demo = gr.Interface(
     outputs="text"
 )
 
-demo.launch()
+demo.launch(server_name="0.0.0.0")
