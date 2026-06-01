@@ -1,0 +1,5 @@
+gradio
+transformers==4.44.0
+tensorflow
+torch
+tf-keras
