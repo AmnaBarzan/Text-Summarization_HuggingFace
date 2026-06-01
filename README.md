@@ -1,6 +1,3 @@
-# Text-Summarization_HuggingFace
-Text summarization using HuggingFace
-
 ---
 title: Text Summarization
 emoji: 📝
