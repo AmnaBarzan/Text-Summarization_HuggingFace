@@ -23,6 +23,6 @@ jobs:
           git config --global user.email "ci@github.com"
           git config --global user.name "GitHub Actions"
 
-          git remote add hf https://AmnaBarzan:$HF_TOKEN@huggingface.co/spaces/AmnaBarzan/Text-Summarization_HuggingFace || true
+          git remote add hf https://user:$HF_TOKEN@huggingface.co/spaces/amnabarzan/text_summarization || true
 
           git push hf main --force
